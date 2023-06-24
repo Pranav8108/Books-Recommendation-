@@ -1,0 +1,110 @@
+.container {
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: black;
+}
+
+.text-white {
+    color: rgb(255, 255, 255)
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: white;
+    margin-right: 20px;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.img {
+    transition: 0.3s ease;
+
+}
+
+#book-default-img {
+    /* border-radius: 50%; */
+    margin-bottom: 20px;
+    border: 5px solid white;
+    object-fit: cover;
+    height: 300px;
+    width: 200px;
+    box-shadow: 0 0 5px 4px rgb(27, 27, 27);
+}
+
+.img:hover {
+    transform: translateY(-5px);
+}
+
+.desc {
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.heading {
+    font-weight: bolder;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.img a {
+    text-decoration: none;
+}
+
+.main {
+    display: flex;
+}
+
+input {
+    color: black;
+    padding: 5px 20px;
+}
+
+input[type='submit'] {
+    color: black;
+    padding: 5px 20px;
+}
+.info{
+    padding: 0 20px;
+}
+
+.recommended-books{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.item:hover {
+    transform: translateY(-5px);
+}

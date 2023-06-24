@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Book Recommender System</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<style>
+    .container {
+        color: rgb(0, 0, 0);
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+
+    .navbar a:hover {
+        color: black;
+    }
+
+    .text-white {
+        color: rgb(255, 255, 255)
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+
+    }
+
+    .navbar-brand {
+        font-weight: bold;
+        color: white;
+        margin-right: 20px;
+    }
+
+    .navbar-nav {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+    .images{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+    }
+    .img{
+        transition: 0.3s ease;
+
+    }
+    img{
+        border-radius: 50%;
+        border: 5px solid white;
+        object-fit: cover;
+        height: 200px;
+        width: 200px;
+        box-shadow: 0 0 5px 4px rgb(27, 27, 27);
+    }
+
+    .img:hover{
+        transform: translateY(-5px);
+    }
+
+    .desc{
+        text-align: center;
+        color: white;
+    }
+    .heading{
+        font-weight: bolder;
+        font-size: xx-large;
+        text-align: center;
+    }
+    .img a{
+        text-decoration: none;
+    }
+</style>
+
+<body style="background-color:rgb(255, 255, 255)">
+    <nav class="navbar" style="background-color:#00a65a">
+        <h1 class="navbar-brand"> Book Recommendation System</h1>
+        <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li> <a href="/add-book">Add books</a></li>
+            <li> <a href="/about">About</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+
+        <h4 class="heading"> TEAM</h4> <br>
+        <div class="images">
+            <div class="img">
+                <a href="https://www.facebook.com/sapkotapranav">
+                    <img src="{{ url_for('static', filename='pranav.jpg') }}" alt="pranav">
+                    <div class="desc">
+                        <h3>Pranav Sapkota</h3>
+                       
+                    </div>   
+                </a>
+            </div>
+            <div class="img">
+                <a href="https://www.facebook.com/bishal.basnet.9887117">
+                    <img src="{{ url_for('static', filename='bishal.jpg') }}" alt="bishal">
+                    <div class="desc">
+                        <h3>Bishal Basnet</h3>
+                        
+                    </div>  
+                </a>
+            </div>
+            <div class="img">
+                <a href="https://www.facebook.com/paribesh.rimal">
+                    <img src="{{ url_for('static', filename='paribesh.jpg') }}" alt="Pari">
+                    <div class="desc">
+                        <h3>Paribesh Rimal</h3>
+                        
+                    </div>  
+                </a>
+            </div>
+        </div>
+
+        <p>Our team consists of a group of avid readers and technology enthusiasts who are passionate about connecting
+            people with books they'll love. We've come together from various backgrounds and areas of expertise to
+            develop a
+            cutting-edge book recommendation system that harnesses the power of artificial intelligence and machine
+            learning.</p>
+
+        <h4>Our Mission:</h4>
+
+        Our mission is to create a book recommendation system that makes it easy for anyone to find their next great
+        read. We believe that reading is one of life's greatest pleasures and that everyone should have access to books
+        that inspire, educate, and entertain them. By leveraging the latest in machine learning and AI technology, we're
+        able to create a personalized reading experience for each user that takes into account their individual tastes,
+        preferences, and reading history.
+
+        <h4>Our Approach:</h4>
+        We've built our recommendation system using a combination of collaborative filtering and content-based filtering
+        techniques. This allows us to provide personalized recommendations to each user based on their reading history,
+        as well as the content of the books they've enjoyed in the past. Our system is constantly learning and adapting
+        to each user's unique reading habits, so the more a user interacts with the system, the better their
+        recommendations become.
+
+        <h4>Our Vision:</h4>
+        Our vision is to create a world where everyone has access to the books that inspire and enrich their lives. We
+        believe that technology can play a powerful role in achieving this vision, and we're committed to leveraging the
+        latest advancements in AI and machine learning to create a recommendation system that is truly personalized,
+        intuitive, and enjoyable to use.
+
+        Thank you for considering our book recommendation system project. We're excited to bring our vision to life and
+        help readers discover their next great read!
+
+
+
+
+    </div>
+
+
+</body>
+
+</html>
